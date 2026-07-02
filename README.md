@@ -24,28 +24,14 @@
 
 ### Featured projects
 
-<p align="center">
-  <a href="https://github.com/SSHdotCodes/second-opinion">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=second-opinion&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="second-opinion"/>
-  </a>
-  <a href="https://github.com/SSHdotCodes/the-qubit">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=the-qubit&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="the-qubit"/>
-  </a>
-  <br/>
-  <a href="https://github.com/SSHdotCodes/rocketsim">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=rocketsim&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="rocketsim"/>
-  </a>
-  <a href="https://github.com/SSHdotCodes/Videopaper">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=Videopaper&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="Videopaper"/>
-  </a>
-  <br/>
-  <a href="https://github.com/SSHdotCodes/probabilities">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=probabilities&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="probabilities"/>
-  </a>
-  <a href="https://github.com/SSHdotCodes/codex-rpc">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SSHdotCodes&repo=codex-rpc&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&hide_border=true" alt="codex-rpc"/>
-  </a>
-</p>
+| Project | What it is |
+|---|---|
+| **[second-opinion](https://github.com/SSHdotCodes/second-opinion)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/second-opinion?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Let Claude access other AI models via MCP |
+| **[the-qubit](https://github.com/SSHdotCodes/the-qubit)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/the-qubit?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Quantum survival game with multiplayer lobby |
+| **[rocketsim](https://github.com/SSHdotCodes/rocketsim)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/rocketsim?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | SFS/KSP-style rocket sim — C++17 compiled to WASM |
+| **[Videopaper](https://github.com/SSHdotCodes/Videopaper)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/Videopaper?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Live macOS wallpapers, incl. a real-time ray-traced black hole in Metal |
+| **[probabilities](https://github.com/SSHdotCodes/probabilities)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/probabilities?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | AI agent forecasting unreleased frontier model release dates |
+| **[codex-rpc](https://github.com/SSHdotCodes/codex-rpc)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/codex-rpc?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Discord Rich Presence for the OpenAI Codex CLI |
 
 ### Tech I reach for
 
@@ -56,21 +42,14 @@
 ### GitHub stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SSHdotCodes&show_icons=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=FFB86B&icon_color=C792EA&text_color=C9D1D9&ring_color=FFB86B" alt="GitHub stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SSHdotCodes&layout=compact&hide_border=true&bg_color=0D1117&title_color=FFB86B&text_color=C9D1D9&langs_count=8" alt="Top languages" height="165"/>
-</p>
-
-<p align="center">
   <img src="https://streak-stats.demolab.com/?user=SSHdotCodes&hide_border=true&background=0D1117&ring=FFB86B&fire=FFB86B&currStreakLabel=FFB86B&sideNums=C9D1D9&currStreakNum=C9D1D9&sideLabels=C9D1D9&dates=8B949E&stroke=0D1117" alt="GitHub streak"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SSHdotCodes&theme=radical&no-frame=true&row=1&column=6&margin-w=8&margin-h=8" alt="trophies"/>
 </p>
 
 <div align="center">
 
 [![Website](https://img.shields.io/badge/ssh.codes-visit-FFB86B?style=for-the-badge&logo=raspberrypi&logoColor=white&labelColor=1b0c3d)](https://ssh.codes)
+[![Followers](https://img.shields.io/github/followers/SSHdotCodes?style=for-the-badge&color=FFB86B&labelColor=1b0c3d)](https://github.com/SSHdotCodes)
+![Profile views](https://komarev.com/ghpvc/?username=SSHdotCodes&style=for-the-badge&color=FFB86B&labelColor=1b0c3d&label=PROFILE+VIEWS)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d1656,50:1b0c3d,100:05010d&height=120&section=footer" width="100%"/>
 
