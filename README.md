@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:05010d,50:1b0c3d,100:2d1656&height=220&section=header&text=SSH&fontSize=70&fontColor=FFE9C7&animation=fadeIn&fontAlignY=35&desc=AI%20experiments%20%C2%B7%20Pi-hosted%20projects%20%C2%B7%20ssh.codes&descAlignY=58&descSize=20&descColor=FFB86B" width="100%"/>
 
 <a href="https://ssh.codes">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1200&color=FFB86B&center=true&vCenter=true&width=650&lines=Ray-tracing+black+holes+in+Metal+for+fun;Running+a+personal+Raspberry+Pi+server+%40+ssh.codes;Teaching+Claude+to+ask+other+models+for+a+second+opinion;Small+AI%2Fdev+experiments%2C+shipped+end+to+end" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1200&color=FFB86B&center=true&vCenter=true&width=880&lines=Ray-tracing+black+holes+in+Metal+for+fun;Running+a+personal+Pi+server+%40+ssh.codes;Teaching+Claude+to+ask+other+models+for+advice;Small+AI%2Fdev+experiments%2C+shipped+end+to+end" alt="Typing SVG" />
 </a>
 
 </div>
