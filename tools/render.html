@@ -18,7 +18,7 @@
   p { max-width: 1280px; padding: 0 28px; color: #8b919b; }
 </style>
 <header><b>SSH / Profile render studio</b><button id="export" disabled>Export 120 frames</button><span id="status" role="status">Building the real workstation scene…</span></header>
-<canvas id="banner" width="1280" height="600" aria-label="SSH.codes. Build. Measure. Ship. A realistic red-lit workstation with a slowly orbiting camera."></canvas>
+<canvas id="banner" width="1280" height="600" aria-label="SSH.codes. Build. Measure. Ship. A realistic red-lit workstation at a fixed angle with spinning fans."></canvas>
 <p>The scene comes from ssh.codes. Export writes only to this local project’s .render/frames directory.</p>
 <script type="module">
 const W = 1280, H = 600, FRAME_COUNT = 120;
@@ -79,12 +79,12 @@ try {
   ws.renderer.setPixelRatio(1.5); ws.renderer.setSize(710, 500, false);
   ws.composer.setPixelRatio(1.5); ws.composer.setSize(710, 500);
   ws.camera.aspect = 710/500; ws.camera.fov = 33; ws.camera.updateProjectionMatrix();
+  // Keep the chassis still; only the fan rotors move throughout the loop.
+  ws.camera.position.set(7.6, 4.65, 10.92);
+  ws.controls.target.set(0, 2.67, 0); ws.controls.update();
 
   function draw(index) {
     const phase = index / FRAME_COUNT * Math.PI * 2;
-    const angle = .50 + .13 * Math.sin(phase);
-    ws.camera.position.set(Math.sin(angle)*13.3, 4.65 + .10*Math.sin(phase), Math.cos(angle)*13.3);
-    ws.controls.target.set(0, 2.67, 0); ws.controls.update();
     ws.spinningFans.forEach((fan, i) => { fan.rotor.rotation.z = -phase * (8 + i); });
     ws.renderer.shadowMap.needsUpdate = true;
     ws.composer.render();

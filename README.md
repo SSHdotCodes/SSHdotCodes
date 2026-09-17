@@ -1,7 +1,7 @@
 <a href="https://ssh.codes/#workstation-reconstruction">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/workstation.png">
-    <img src="assets/workstation.gif" width="1280" alt="SSH.codes — Build. Measure. Ship. A realistic 3D render of my workstation, with red-lit spinning fans and a slow camera orbit. Click to explore it on ssh.codes.">
+    <img src="assets/workstation.gif" width="1280" alt="SSH.codes — Build. Measure. Ship. A realistic 3D render of my workstation at a fixed angle, with red-lit spinning fans. Click to explore it on ssh.codes.">
   </picture>
 </a>
 
@@ -32,7 +32,6 @@ The workstation above is the same **Three.js reconstruction of my real machine**
 | **[GLM on Blackwell](https://github.com/SSHdotCodes/glm-5.3-flash-pro6000)** | Single-GPU GLM-5.3-Flash serving, RAM expert caching, DFlash2, and reproducible benchmarks. |
 | **[Qwen on Blackwell](https://github.com/SSHdotCodes/qwen-3.8-flash-next-pro6000)** | Qwen3.8-Flash-Next inference tuning, full-context serving, and correctness checks on an RTX PRO 6000. |
 | **[Second Opinion](https://github.com/SSHdotCodes/second-opinion)** | Let Claude bring other AI models into the work through MCP. |
-| **[BG0](https://github.com/SSHdotCodes/bg0)** | Private background removal in your browser, powered by WebGPU with a WASM fallback. |
 | **[Videopaper](https://github.com/SSHdotCodes/Videopaper)** | Native macOS live wallpapers, including a real-time black hole ray tracer in Metal. |
 | **[Codex RPC](https://github.com/SSHdotCodes/codex-rpc)** | Discord Rich Presence for the Codex CLI, with animated activity states. |
 

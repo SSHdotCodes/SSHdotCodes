@@ -11,8 +11,8 @@ The model was copied from a fresh `ssh-codes-root` Pi source archive on
 without changes to its geometry, materials, or interaction code. Its SHA-256 is
 `87122af2870b2853db1171b81da3d0e2bd912aa5f74e2c14ba50accf88c114f8`.
 
-The profile renderer adds a charcoal/red composition, a gentle orbit, deterministic
-fan rotation, and brighter room lighting. It uses the original scene's exposed
+The profile renderer adds a charcoal/red composition, a fixed three-quarter view,
+deterministic fan rotation, and brighter room lighting. It uses the original scene's exposed
 rendering controls. The original scene and the new composition belong to this
 profile; Three.js and esbuild remain external npm dependencies under their own
 licenses. No production server or website changes are needed to regenerate it.
