@@ -9,7 +9,7 @@
   <a href="https://ssh.codes"><strong>Website</strong></a> &nbsp;·&nbsp;
   <a href="https://huggingface.co/ProCreations"><strong>Models & datasets</strong></a> &nbsp;·&nbsp;
   <a href="https://ssh.codes/blog"><strong>Build log</strong></a> &nbsp;·&nbsp;
-  <a href="https://x.com/SSHTheDev"><strong>X</strong></a> &nbsp;·&nbsp;
+  <a href="https://x.com/SSHCodes"><strong>X</strong></a> &nbsp;·&nbsp;
   <a href="mailto:me@ssh.codes"><strong>Get in touch</strong></a>
 </p>
 
