@@ -1,8 +1,8 @@
 # Profile artwork
 
-`workstation.gif` is a seamless six-second, 20 fps render of the actual Three.js
+`workstation-fixed-angle.gif` is a seamless six-second, 20 fps render of the actual Three.js
 workstation from [ssh.codes](https://ssh.codes/#workstation-reconstruction).
-`workstation.png` is its first frame and the profile's reduced-motion fallback.
+`workstation-fixed-angle.png` is its first frame and the profile's reduced-motion fallback.
 Both are 1280 × 600. GitHub renders the animation as an image; the banner links
 to the live scene for camera and lighting controls.
 
