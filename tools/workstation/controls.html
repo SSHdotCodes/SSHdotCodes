@@ -1,0 +1,30 @@
+    <div id="workstation-reconstruction" role="region" aria-label="SSH's animated workstation">
+      <div class="ws-stage">
+        <canvas class="workstation-canvas" aria-label="Your workstation in 3D, with spinning red fans. Drag horizontally to rotate."></canvas>
+        <img class="ws-fallback" alt="SSH's workstation with red lighting" />
+        <div class="ws-loading" role="status">Powering on the workstation…</div>
+        <noscript><img src="/workstation-poster.png?v=20260907-ws5" alt="SSH's workstation with red lighting" style="width:100%;height:100%;object-fit:contain" /></noscript>
+      </div>
+      <div class="ws-caption">
+        <span class="ws-identity"><i></i> THE WORKSTATION</span>
+        <div class="ws-actions">
+          <button class="ws-action" type="button" id="ws-replay" aria-label="Replay the workstation entrance">↻ Replay</button>
+          <button class="ws-action" type="button" id="ws-settings-toggle" aria-controls="ws-settings" aria-expanded="false">Lighting ↗</button>
+        </div>
+      </div>
+      <span class="ws-hint">Drag to rotate · Rebuilt from the real machine</span>
+      <div class="ws-settings" id="ws-settings" hidden>
+        <h2>Lighting studio</h2>
+        <div class="ws-field"><label for="ws-color">All fans</label><input type="color" id="ws-color" value="#ff1026" /></div>
+        <label class="ws-a11y" for="ws-preset">Lighting preset</label>
+        <select id="ws-preset"><option value="red">Signature red</option><option value="blue">Electric blue</option><option value="ice">Ice white</option><option value="violet">Violet</option><option value="teal">Teal</option><option value="split">Blue / violet / pink</option><option value="custom" hidden>Custom</option></select>
+        <div class="ws-field"><label for="ws-bright">RGB intensity</label><output id="ws-bright-out">100%</output></div><input type="range" id="ws-bright" min="0" max="100" value="100" />
+        <div class="ws-field"><label for="ws-ambient">Room light</label><output id="ws-ambient-out">42%</output></div><input type="range" id="ws-ambient" min="0" max="100" value="42" />
+        <div class="ws-fan-colors"><label>Top<input id="ws-fan-0" type="color" value="#ff1026" /></label><label>Middle<input id="ws-fan-1" type="color" value="#ff1026" /></label><label>Bottom<input id="ws-fan-2" type="color" value="#ff1026" /></label><label>Rear<input id="ws-fan-3" type="color" value="#ff1026" /></label></div>
+        <div class="ws-hr"></div>
+        <label class="ws-a11y" for="ws-view">Camera angle</label><select id="ws-view"><option value="hero">Hero angle</option><option value="photo">Photo angle</option><option value="side">Side</option><option value="front">Front</option><option value="top">Top grille & ports</option><option value="rear">Rear ports</option></select>
+        <label class="ws-field" for="ws-glass">Glass panel<input id="ws-glass" type="checkbox" checked /></label>
+        <label class="ws-field" for="ws-spin">Fans spinning<input id="ws-spin" type="checkbox" checked /></label>
+      </div>
+      <span class="ws-a11y" id="ws-announcement" aria-live="polite"></span>
+    </div>

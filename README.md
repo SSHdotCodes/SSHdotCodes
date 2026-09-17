@@ -1,56 +1,58 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05010d,50:1b0c3d,100:2d1656&height=220&section=header&text=SSH&fontSize=70&fontColor=FFE9C7&animation=fadeIn&fontAlignY=35&desc=AI%20experiments%20%C2%B7%20Pi-hosted%20projects%20%C2%B7%20ssh.codes&descAlignY=58&descSize=20&descColor=FFB86B" width="100%"/>
-
-<a href="https://ssh.codes">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1200&color=FFB86B&center=true&vCenter=true&width=880&lines=Ray-tracing+black+holes+in+Metal+for+fun;Running+a+personal+Pi+server+%40+ssh.codes;Teaching+Claude+to+ask+other+models+for+advice;Small+AI%2Fdev+experiments%2C+shipped+end+to+end" alt="Typing SVG" />
+<a href="https://ssh.codes/#workstation-reconstruction">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/workstation.png">
+    <img src="assets/workstation.gif" width="1280" alt="SSH.codes — Build. Measure. Ship. A realistic 3D render of my workstation, with red-lit spinning fans and a slow camera orbit. Click to explore it on ssh.codes.">
+  </picture>
 </a>
 
-</div>
-
-### About me
-
-- 🛰️ I build small, complete AI & systems projects — from a Metal geodesic ray tracer to a self-hosted Raspberry Pi fleet at **[ssh.codes](https://ssh.codes)**
-- 🔭 Into anything at the intersection of low-level performance (Metal, MLX, C++) and applied AI (agents, MCP, local models)
-- 🧪 Most of what I ship lands on my Pi and stays running — real projects, real traffic, no throwaway demos
-- 💬 Ask me about MCP servers, MLX kernels, or why a black hole shader is a great weekend project
-
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/SSHdotCodes/SSHdotCodes/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" width="100%" alt="snake animation dark"/>
-<img src="https://raw.githubusercontent.com/SSHdotCodes/SSHdotCodes/output/github-contribution-grid-snake.svg#gh-light-mode-only" width="100%" alt="snake animation light"/>
-</div>
-
-### Featured projects
-
-| Project | What it is |
-|---|---|
-| **[second-opinion](https://github.com/SSHdotCodes/second-opinion)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/second-opinion?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Let Claude access other AI models via MCP |
-| **[the-qubit](https://github.com/SSHdotCodes/the-qubit)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/the-qubit?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Quantum survival game with multiplayer lobby |
-| **[rocketsim](https://github.com/SSHdotCodes/rocketsim)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/rocketsim?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | SFS/KSP-style rocket sim — C++17 compiled to WASM |
-| **[Videopaper](https://github.com/SSHdotCodes/Videopaper)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/Videopaper?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Live macOS wallpapers, incl. a real-time ray-traced black hole in Metal |
-| **[probabilities](https://github.com/SSHdotCodes/probabilities)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/probabilities?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | AI agent forecasting unreleased frontier model release dates |
-| **[codex-rpc](https://github.com/SSHdotCodes/codex-rpc)** ![stars](https://img.shields.io/github/stars/SSHdotCodes/codex-rpc?style=flat&label=%E2%98%85&color=FFB86B&labelColor=1b0c3d) | Discord Rich Presence for the OpenAI Codex CLI |
-
-### Tech I reach for
-
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,cpp,js,ts,swift,react,threejs,nodejs,docker,git,raspberrypi,bash,pytorch" alt="tech stack icons"/>
+  <a href="https://ssh.codes"><strong>Website</strong></a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/ProCreations"><strong>Models & datasets</strong></a> &nbsp;·&nbsp;
+  <a href="https://ssh.codes/blog"><strong>Build log</strong></a> &nbsp;·&nbsp;
+  <a href="https://x.com/SSHTheDev"><strong>X</strong></a> &nbsp;·&nbsp;
+  <a href="mailto:me@ssh.codes"><strong>Get in touch</strong></a>
 </p>
 
-### GitHub stats
+I'm **SSH**. I build open-weight models, fast inference stacks, and tools that run on your machine. I like measured results, source you can inspect, and projects you can actually use.
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=SSHdotCodes&hide_border=true&background=0D1117&ring=FFB86B&fire=FFB86B&currStreakLabel=FFB86B&sideNums=C9D1D9&currStreakNum=C9D1D9&sideLabels=C9D1D9&dates=8B949E&stroke=0D1117" alt="GitHub streak"/>
-</p>
+The workstation above is the same **Three.js reconstruction of my real machine** featured on [ssh.codes](https://ssh.codes/#workstation-reconstruction). Open it to rotate the model and play with the lighting.
 
-<div align="center">
+### Models, measured
 
-[![Website](https://img.shields.io/badge/ssh.codes-visit-FFB86B?style=for-the-badge&logo=raspberrypi&logoColor=white&labelColor=1b0c3d)](https://ssh.codes)
-[![Followers](https://img.shields.io/github/followers/SSHdotCodes?style=for-the-badge&color=FFB86B&labelColor=1b0c3d)](https://github.com/SSHdotCodes)
-![Profile views](https://komarev.com/ghpvc/?username=SSHdotCodes&style=for-the-badge&color=FFB86B&labelColor=1b0c3d&label=PROFILE+VIEWS)
+**[The Grug Series](https://huggingface.co/ProCreations)** — Open-weight models trained to spend fewer tokens thinking, with GGUF builds for local use.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d1656,50:1b0c3d,100:05010d&height=120&section=footer" width="100%"/>
+**[Auto](https://github.com/SSHdotCodes/auto)** — Local permission intelligence for coding agents. Checks proposed tool calls against your request and agent history, with support for Pi, OpenCode, and Hermes.
 
-</div>
+**[Black Hole Benchmark](https://bhbench.ssh.codes)** — One prompt, different models, actual compiled C++ renders. [Inspect the submissions →](https://github.com/SSHdotCodes/bhbench)
+
+### Selected builds
+
+| Project | What I’m building |
+| :--- | :--- |
+| **[GLM on Blackwell](https://github.com/SSHdotCodes/glm-5.3-flash-pro6000)** | Single-GPU GLM-5.3-Flash serving, RAM expert caching, DFlash2, and reproducible benchmarks. |
+| **[Qwen on Blackwell](https://github.com/SSHdotCodes/qwen-3.8-flash-next-pro6000)** | Qwen3.8-Flash-Next inference tuning, full-context serving, and correctness checks on an RTX PRO 6000. |
+| **[Second Opinion](https://github.com/SSHdotCodes/second-opinion)** | Let Claude bring other AI models into the work through MCP. |
+| **[BG0](https://github.com/SSHdotCodes/bg0)** | Private background removal in your browser, powered by WebGPU with a WASM fallback. |
+| **[Videopaper](https://github.com/SSHdotCodes/Videopaper)** | Native macOS live wallpapers, including a real-time black hole ray tracer in Metal. |
+| **[Codex RPC](https://github.com/SSHdotCodes/codex-rpc)** | Discord Rich Presence for the Codex CLI, with animated activity states. |
+
+[More projects on ssh.codes →](https://ssh.codes/projects)
+
+### The workshop
+
+**Models & inference** &nbsp; PyTorch · LoRA · GGUF / llama.cpp · CUDA · MLX<br>
+**Interfaces & systems** &nbsp; Python · C++ · TypeScript · Swift · Metal · WebGPU · Three.js · MCP<br>
+**Hardware & hosting** &nbsp; RTX PRO 6000 Blackwell · Apple Silicon · Raspberry Pi · Docker
+
+<details>
+  <summary>Contribution trail</summary>
+  <br>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SSHdotCodes/SSHdotCodes/output/github-contribution-grid-snake-dark.svg">
+    <img src="https://raw.githubusercontent.com/SSHdotCodes/SSHdotCodes/output/github-contribution-grid-snake.svg" width="100%" alt="Snake animation of my GitHub contribution graph">
+  </picture>
+</details>
+
+---
+
+**Have something interesting to build?** [me@ssh.codes](mailto:me@ssh.codes)

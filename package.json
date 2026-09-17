@@ -1,0 +1,14 @@
+{
+  "name": "ssh-github-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:scene": "esbuild tools/workstation/scene.js --bundle --minify --format=esm --target=es2022 --outfile=.render/workstation3d.js",
+    "render": "npm run build:scene && node tools/render-server.mjs",
+    "encode": "node tools/encode.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9",
+    "three": "0.160.1"
+  }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSH profile · workstation renderer</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #080a0d; color: #eee; font: 15px system-ui, sans-serif; }
+  header { display: flex; align-items: center; gap: 20px; padding: 20px 28px; }
+  button { border: 1px solid #ff5261; border-radius: 7px; padding: 10px 16px; color: #fff; background: #c83043; font: inherit; cursor: pointer; }
+  button:disabled { opacity: .45; cursor: wait; }
+  #status { color: #aab0ba; }
+  #banner { display: block; width: min(100%, 1280px); height: auto; margin: 0 auto; }
+  #workstation-reconstruction { position: fixed; left: 0; top: 0; width: 710px; height: 500px; z-index: -1; opacity: .001; pointer-events: none; }
+  .ws-stage { width: 710px; height: 500px; }
+  .workstation-canvas { width: 100%; height: 100%; }
+  #workstation-reconstruction > :not(.ws-stage), .ws-stage > :not(canvas) { display: none; }
+  p { max-width: 1280px; padding: 0 28px; color: #8b919b; }
+</style>
+<header><b>SSH / Profile render studio</b><button id="export" disabled>Export 120 frames</button><span id="status" role="status">Building the real workstation scene…</span></header>
+<canvas id="banner" width="1280" height="600" aria-label="SSH.codes. Build. Measure. Ship. A realistic red-lit workstation with a slowly orbiting camera."></canvas>
+<p>The scene comes from ssh.codes. Export writes only to this local project’s .render/frames directory.</p>
+<script type="module">
+const W = 1280, H = 600, FRAME_COUNT = 120;
+const output = document.getElementById('banner');
+const ctx = output.getContext('2d');
+const status = document.getElementById('status');
+const button = document.getElementById('export');
+const base = document.createElement('canvas'); base.width = W; base.height = H;
+const b = base.getContext('2d');
+
+function text(c, str, x, y, font, color) { c.font = font; c.fillStyle = color; c.fillText(str, x, y); }
+function background() {
+  b.fillStyle = '#090b0e'; b.fillRect(0, 0, W, H);
+  const glow = b.createRadialGradient(965, 322, 20, 965, 322, 440);
+  glow.addColorStop(0, '#32171d'); glow.addColorStop(.55, '#180f14'); glow.addColorStop(1, '#090b0e');
+  b.fillStyle = glow; b.fillRect(440, 0, 840, H);
+  // Quiet engineering grid: the hardware stays the focal point.
+  b.strokeStyle = '#ffffff06'; b.lineWidth = 1;
+  for (let x = 26; x < W; x += 32) { b.beginPath(); b.moveTo(x+.5, 0); b.lineTo(x+.5, H); b.stroke(); }
+  for (let y = 20; y < H; y += 32) { b.beginPath(); b.moveTo(0, y+.5); b.lineTo(W, y+.5); b.stroke(); }
+  b.strokeStyle = '#ffffff16'; b.strokeRect(.5, .5, W-1, H-1);
+  b.fillStyle = '#ff5364'; b.fillRect(0, 0, 90, 3);
+  text(b, 'SSH', 56, 55, '700 23px monospace', '#f2f3f5');
+  text(b, '.codes', 100, 55, '400 23px monospace', '#a3a8b2');
+  text(b, '_', 183, 55, '700 23px monospace', '#ff5364');
+  b.textAlign = 'right';
+  text(b, 'OPEN MODELS / SYSTEMS / EXPERIMENTS', 1224, 52, '12px monospace', '#8e939e');
+  b.textAlign = 'left';
+  b.fillStyle = '#ff5364'; b.beginPath(); b.arc(60, 118, 3, 0, Math.PI*2); b.fill();
+  text(b, '@SSHTHEDEV', 74, 122, '12px monospace', '#b9bdc6');
+  text(b, 'Build.', 52, 215, '700 86px Arial', '#f4f4f5');
+  text(b, 'Measure.', 52, 306, '700 86px Arial', '#f4f4f5');
+  text(b, 'Ship.', 52, 397, '700 86px Arial', '#ff5364');
+  text(b, 'Open models. Fast inference.', 57, 446, '21px Arial', '#b8bcc6');
+  text(b, 'Tools you can actually use.', 57, 476, '21px Arial', '#b8bcc6');
+  b.strokeStyle = '#ffffff1b'; b.beginPath(); b.moveTo(56, 528.5); b.lineTo(1224, 528.5); b.stroke();
+  text(b, 'TRAIN IT. TEST IT. PUT IT IN PEOPLE’S HANDS.', 57, 565, '12px monospace', '#9197a2');
+  b.textAlign = 'right';
+  text(b, 'EXPLORE THE WORKSTATION  ↗', 1224, 565, '12px monospace', '#d3d5dc');
+  b.textAlign = 'left';
+}
+background(); ctx.drawImage(base, 0, 0);
+
+try {
+  const response = await fetch('/tools/workstation/controls.html');
+  if (!response.ok) throw new Error('Could not load workstation controls.');
+  document.body.insertAdjacentHTML('beforeend', await response.text());
+  await import('/.render/workstation3d.js');
+  const ws = window.workstationScene;
+  if (!ws) throw new Error('The workstation could not initialize WebGL.');
+  ws.view('hero');
+  const spin = document.getElementById('ws-spin');
+  spin.checked = false; spin.dispatchEvent(new Event('change'));
+  const ambient = document.getElementById('ws-ambient');
+  ambient.value = '62'; ambient.dispatchEvent(new Event('input'));
+  ws.controls.enableDamping = false;
+  ws.controls.enabled = false;
+  ws.renderer.setPixelRatio(1.5); ws.renderer.setSize(710, 500, false);
+  ws.composer.setPixelRatio(1.5); ws.composer.setSize(710, 500);
+  ws.camera.aspect = 710/500; ws.camera.fov = 33; ws.camera.updateProjectionMatrix();
+
+  function draw(index) {
+    const phase = index / FRAME_COUNT * Math.PI * 2;
+    const angle = .50 + .13 * Math.sin(phase);
+    ws.camera.position.set(Math.sin(angle)*13.3, 4.65 + .10*Math.sin(phase), Math.cos(angle)*13.3);
+    ws.controls.target.set(0, 2.67, 0); ws.controls.update();
+    ws.spinningFans.forEach((fan, i) => { fan.rotor.rotation.z = -phase * (8 + i); });
+    ws.renderer.shadowMap.needsUpdate = true;
+    ws.composer.render();
+    ctx.clearRect(0, 0, W, H); ctx.drawImage(base, 0, 0);
+    ctx.drawImage(ws.renderer.domElement, 544, 45, 710, 500);
+  }
+  let exporting = false;
+  function preview(now) { if (!exporting) draw((now / 50) % FRAME_COUNT); requestAnimationFrame(preview); }
+  requestAnimationFrame(preview);
+  button.disabled = false; status.textContent = 'Ready · 1280 × 600 · seamless 6-second loop';
+  button.addEventListener('click', async () => {
+    exporting = true; button.disabled = true;
+    try {
+      for (let i = 0; i < FRAME_COUNT; i++) {
+        draw(i);
+        const png = await new Promise(resolve => output.toBlob(resolve, 'image/png'));
+        if (!png) throw new Error('Canvas export failed.');
+        const result = await fetch(`/frame/${String(i).padStart(4, '0')}`, { method: 'POST', body: png });
+        if (!result.ok) throw new Error(`Could not save frame ${i}: ${result.status}`);
+        status.textContent = `Saved ${i + 1} / ${FRAME_COUNT} frames`;
+      }
+      status.textContent = 'Export complete · 120 frames saved. Run npm run encode.';
+    } catch (error) { status.textContent = error.message; }
+    finally { exporting = false; button.disabled = false; }
+  });
+} catch (error) { status.textContent = error.message; console.error(error); }
+</script>
+</html>
