@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#132642"/><stop offset=".55" stop-color="#0b1420"/><stop offset="1" stop-color="#090b0e"/></radialGradient>
+    <pattern id="grid" x="26" y="20" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M0 32V0H32" fill="none" stroke="#fff" stroke-opacity=".024"/></pattern>
+  </defs>
+  <path fill="#090b0e" d="M0 0h1280v600H0z"/>
+  <ellipse cx="970" cy="325" rx="470" ry="440" fill="url(#glow)"/>
+  <path fill="url(#grid)" d="M0 0h1280v600H0z"/>
+</svg>

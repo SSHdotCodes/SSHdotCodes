@@ -1,0 +1,20 @@
+{
+  "width": 1280,
+  "height": 600,
+  "fps": 25,
+  "frames": 100,
+  "duration_seconds": 4,
+  "source": "tools/workstation/blue-detail-cycle.mp4",
+  "source_sha256": "7f91e27c0ac3748e1a96456878a9ea565d8b68626ef862af364fa826945e40b6",
+  "source_resolution": [
+    3840,
+    2160
+  ],
+  "source_fps": 60,
+  "visible_base_faces": 2043498,
+  "front_vent_holes": 25877,
+  "renderer": "Blender 5.1.2 / Cycles / OptiX",
+  "camera": "fixed",
+  "lighting": "blue",
+  "motion": "eight spinning fan assemblies"
+}

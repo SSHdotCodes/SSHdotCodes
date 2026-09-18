@@ -1,34 +1,41 @@
 # Profile artwork
 
-`workstation-fixed-angle.gif` is a seamless six-second, 20 fps render of the actual Three.js
-workstation from [ssh.codes](https://ssh.codes/#workstation-reconstruction).
-`workstation-fixed-angle.png` is its first frame and the profile's reduced-motion fallback.
-Both are 1280 × 600. GitHub renders the animation as an image; the banner links
-to the live scene for camera and lighting controls.
+`workstation-blue-detail.gif` is a four-second, 25 fps loop of the detailed blue
+Blender workstation, composed into the profile's 1280 × 600 banner.
+`workstation-blue-detail.png` is its first frame and the reduced-motion fallback.
+The camera stays fixed and eight fan assemblies spin. The banner links to the
+interactive Three.js version on [ssh.codes](https://ssh.codes/#workstation-reconstruction).
 
-The model was copied from a fresh `ssh-codes-root` Pi source archive on
-2026-09-16. The original scene is preserved in `tools/workstation/scene.js`,
-without changes to its geometry, materials, or interaction code. Its SHA-256 is
-`87122af2870b2853db1171b81da3d0e2bd912aa5f74e2c14ba50accf88c114f8`.
+The render uses the photographed workstation reconstruction refined in Blender
+5.1.2: approximately 2.04 million visible base faces, 25,877 actual front intake
+holes, a woven roof filter, curved fan blades, detailed circuitry, GPU fins and
+screws, textured metal, and physical glass. Hidden hardware details are artistic
+approximations. Cycles/OptiX rendered the source at native 3840 × 2160 and 60 fps
+on an RTX PRO 6000, with up to 256 adaptive samples and denoising.
 
-The profile renderer adds a charcoal/red composition, a fixed three-quarter view,
-deterministic fan rotation, and brighter room lighting. It uses the original scene's exposed
-rendering controls. The original scene and the new composition belong to this
-profile; Three.js and esbuild remain external npm dependencies under their own
-licenses. No production server or website changes are needed to regenerate it.
+`tools/workstation/blue-detail-cycle.mp4` contains one complete four-second
+physical fan cycle from that render. Every rotor makes an integer number of
+revolutions in four seconds. It has no music, camera cuts, reverse playback or
+crossfade. The GIF samples that cycle at 25 fps; its frames have exact 40 ms delays.
+The source checksum and output settings are in `workstation-blue-detail.json`.
 
 ## Regenerate
 
-Requires Node.js, npm, ffmpeg, and a browser with WebGL2.
+Requires Node.js, npm and ffmpeg. Arial and Menlo (or their platform substitutes)
+are rasterized into the banner. No fonts or rendering libraries load on GitHub.
 
-1. Run `npm ci` in the repository root.
-2. Run `npm run render` and open the printed loopback URL.
-3. Wait for the scene, then click **Export 120 frames**.
-4. When the page reports the export is complete, run `npm run encode` in another terminal.
-5. Inspect both finished images before committing them. Stop the render server when done.
+```sh
+npm ci
+npm run encode
+```
 
-Raw frames and the bundled scene stay in the ignored `.render/` directory.
-The renderer serves only on `127.0.0.1`; frame writes accept same-origin PNGs
-in numbered slots. The build uses pinned dependencies from `package-lock.json`.
-Arial and the browser's monospace font are rasterized into the artwork, so the
-finished profile does not fetch fonts or rendering libraries.
+The included video is the default input. To use an equivalent 4K/60 fixed-camera,
+four-second cycle, pass its path to `npm run encode -- /path/to/cycle.mp4`.
+The two SVG files in `tools/` define the existing banner layout and matching blue
+accents. The encoder feathers the studio background, preserves the full chassis,
+and produces both the animation and static fallback. Temporary composited frames
+stay in ignored `.render/detail/`.
+
+The earlier website-derived renderer remains under `tools/render.html` and
+`tools/workstation/scene.js` for reference. Its commands are `npm run render` and
+`npm run encode:legacy`; it does not generate the current profile artwork.

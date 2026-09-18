@@ -1,7 +1,7 @@
 <a href="https://ssh.codes/#workstation-reconstruction">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/workstation-fixed-angle.png">
-    <img src="assets/workstation-fixed-angle.gif" width="1280" alt="SSH.codes — Build. Measure. Ship. A realistic 3D render of my workstation at a fixed angle, with red-lit spinning fans. Click to explore it on ssh.codes.">
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/workstation-blue-detail.png">
+    <img src="assets/workstation-blue-detail.gif" width="1280" alt="SSH.codes — Build. Measure. Ship. A detailed Blender render of my real workstation at a fixed angle, with blue-lit spinning fans. Click to explore it on ssh.codes.">
   </picture>
 </a>
 
@@ -15,7 +15,7 @@
 
 I'm **SSH**. I build open-weight models, fast inference stacks, and tools that run on your machine. I like measured results, source you can inspect, and projects you can actually use.
 
-The workstation above is the same **Three.js reconstruction of my real machine** featured on [ssh.codes](https://ssh.codes/#workstation-reconstruction). Open it to rotate the model and play with the lighting.
+The workstation above is a **detailed Blender reconstruction of my real machine**, rendered with blue lighting and spinning fans. Explore the interactive version on [ssh.codes](https://ssh.codes/#workstation-reconstruction) to rotate it and change the lighting.
 
 ### Models, measured
 
