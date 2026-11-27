@@ -1,0 +1,38 @@
+name: Update Hugging Face Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/update-hf-stats.mjs"
+      - ".github/workflows/hf-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate Hugging Face stats SVGs
+        run: node tools/update-hf-stats.mjs dist
+
+      - name: Publish SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

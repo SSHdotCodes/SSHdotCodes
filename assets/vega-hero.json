@@ -1,6 +1,6 @@
 {
   "width": 1280,
-  "height": 600,
+  "height": 500,
   "fps": 25,
   "frames": 100,
   "duration_seconds": 4,
@@ -11,8 +11,6 @@
     2160
   ],
   "source_fps": 60,
-  "visible_base_faces": 2043498,
-  "front_vent_holes": 25877,
   "renderer": "Blender 5.1.2 / Cycles / OptiX",
   "camera": "fixed",
   "lighting": "blue",
