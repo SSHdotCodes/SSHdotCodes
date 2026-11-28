@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="324" viewBox="0 0 1280 324" role="img" aria-label="Hugging Face stats for ProCreations: 2,233,053 all-time downloads across 105 models and 39 datasets">
+  <defs>
+    <radialGradient id="glow_light" cx="14%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barTop_light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="barSub_light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+    <clipPath id="cardClip_light">
+      <rect x="0.5" y="0.5" width="1279" height="323" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip_light)">
+    <rect width="1280" height="324" fill="#ffffff"/>
+    <rect width="1280" height="324" fill="url(#glow_light)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="323" rx="12" fill="none" stroke="#d8e0ec"/>
+
+  <!-- Left: Total Downloads -->
+  <circle cx="50" cy="40" r="4" fill="#2563eb"/>
+  <text x="64" y="44" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.1em" fill="#64748b">HUGGING FACE · PROCREATIONS</text>
+
+  <text x="42" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-0.04em" fill="#0f172a">2.23M+</text>
+  <text x="44" y="170" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" fill="#334155">2,233,053 all-time downloads</text>
+
+  <rect x="44" y="186" width="174" height="26" rx="13" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="131" y="203" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#1d4ed8">+229K in last 30d</text>
+
+  <line x1="44" y1="229" x2="452" y2="229" stroke="#e4eaf3"/>
+  
+    <g transform="translate(44, 256)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.02em" fill="#0f172a">105</text>
+      <text x="0" y="19" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.09em" fill="#64748b">MODELS</text>
+    </g>
+
+    <g transform="translate(152, 256)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.02em" fill="#0f172a">39</text>
+      <text x="0" y="19" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.09em" fill="#64748b">DATASETS</text>
+    </g>
+
+    <g transform="translate(260, 256)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.02em" fill="#0f172a">362</text>
+      <text x="0" y="19" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.09em" fill="#64748b">SPACES</text>
+    </g>
+
+    <g transform="translate(368, 256)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.02em" fill="#0f172a">390</text>
+      <text x="0" y="19" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" letter-spacing="0.09em" fill="#64748b">FOLLOWERS</text>
+    </g>
+
+  <!-- Vertical divider -->
+  <line x1="484" y1="30" x2="484" y2="294" stroke="#e4eaf3"/>
+
+  <!-- Right: Top Model Families -->
+  <text x="524" y="44" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.1em" fill="#64748b">TOP MODEL FAMILIES</text>
+  <text x="1232" y="44" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" letter-spacing="0.06em" fill="#8593a8">ALL-TIME  ·  30D VELOCITY</text>
+
+  
+    <g transform="translate(0, 80)">
+      <text x="524" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Grug Series<tspan dx="10" font-size="12.5" font-weight="400" fill="#64748b">concise reasoning · 27B / 35B / 9B / 3B</tspan></text>
+      <text x="1232" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" font-weight="600" fill="#0f172a">2.09M<tspan dx="8" font-size="11.5" font-weight="400" fill="#64748b">+201K/30d</tspan></text>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="#edf2f9"/>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="url(#barTop_light)"/>
+    </g>
+
+    <g transform="translate(0, 124)">
+      <text x="524" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Ternary-Bonsai-2-27B<tspan dx="10" font-size="12.5" font-weight="400" fill="#64748b">MTP + DFlash2 + GGUF</tspan></text>
+      <text x="1232" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" font-weight="600" fill="#0f172a">71.8K<tspan dx="8" font-size="11.5" font-weight="400" fill="#64748b">+11.3K/30d</tspan></text>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="#edf2f9"/>
+      <rect x="524" y="10" width="429" height="6" rx="3" fill="url(#barSub_light)"/>
+    </g>
+
+    <g transform="translate(0, 168)">
+      <text x="524" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">MiMo-V2.6-Flash<tspan dx="10" font-size="12.5" font-weight="400" fill="#64748b">NVFP4 + GGUF quants</tspan></text>
+      <text x="1232" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" font-weight="600" fill="#0f172a">22.3K<tspan dx="8" font-size="11.5" font-weight="400" fill="#64748b">+4.1K/30d</tspan></text>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="#edf2f9"/>
+      <rect x="524" y="10" width="333" height="6" rx="3" fill="url(#barSub_light)"/>
+    </g>
+
+    <g transform="translate(0, 212)">
+      <text x="524" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Dory-Beam-4B<tspan dx="10" font-size="12.5" font-weight="400" fill="#64748b">looped-transformer distill</tspan></text>
+      <text x="1232" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" font-weight="600" fill="#0f172a">4.6K<tspan dx="8" font-size="11.5" font-weight="400" fill="#64748b">+3.4K/30d</tspan></text>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="#edf2f9"/>
+      <rect x="524" y="10" width="202" height="6" rx="3" fill="url(#barSub_light)"/>
+    </g>
+
+    <g transform="translate(0, 256)">
+      <text x="524" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Auto Series<tspan dx="10" font-size="12.5" font-weight="400" fill="#64748b">local tool-call safety · v3</tspan></text>
+      <text x="1232" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5" font-weight="600" fill="#0f172a">3.4K<tspan dx="8" font-size="11.5" font-weight="400" fill="#64748b">+1.1K/30d</tspan></text>
+      <rect x="524" y="10" width="708" height="6" rx="3" fill="#edf2f9"/>
+      <rect x="524" y="10" width="176" height="6" rx="3" fill="url(#barSub_light)"/>
+    </g>
+
+  <!-- Footer -->
+  <text x="524" y="303" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#8593a8">Live via Hugging Face API · Updated Nov 28, 2026</text>
+  <text x="1232" y="303" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#2563eb">huggingface.co/ProCreations ↗</text>
+</svg>

@@ -1,0 +1,54 @@
+{
+  "user": "ProCreations",
+  "updated_at": "2026-11-28T06:32:02.427Z",
+  "total_downloads_all_time": 2233053,
+  "total_downloads_30d": 229189,
+  "models_downloads_all_time": 2209532,
+  "datasets_downloads_all_time": 23521,
+  "models": 105,
+  "datasets": 39,
+  "spaces": 362,
+  "followers": 390,
+  "top_families": [
+    {
+      "key": "grug",
+      "label": "Grug Series",
+      "sub": "concise reasoning · 27B / 35B / 9B / 3B",
+      "all": 2094524,
+      "d30": 201412,
+      "repos": 32
+    },
+    {
+      "key": "bonsai",
+      "label": "Ternary-Bonsai-2-27B",
+      "sub": "MTP + DFlash2 + GGUF",
+      "all": 71832,
+      "d30": 11334,
+      "repos": 3
+    },
+    {
+      "key": "mimo",
+      "label": "MiMo-V2.6-Flash",
+      "sub": "NVFP4 + GGUF quants",
+      "all": 22285,
+      "d30": 4129,
+      "repos": 3
+    },
+    {
+      "key": "dory",
+      "label": "Dory-Beam-4B",
+      "sub": "looped-transformer distill",
+      "all": 4582,
+      "d30": 3382,
+      "repos": 3
+    },
+    {
+      "key": "auto",
+      "label": "Auto Series",
+      "sub": "local tool-call safety · v3",
+      "all": 3362,
+      "d30": 1090,
+      "repos": 14
+    }
+  ]
+}
